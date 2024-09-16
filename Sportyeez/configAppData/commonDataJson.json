@@ -1,0 +1,8 @@
+{
+
+  "browser" : "firefox",
+  "url" : "http://106.51.90.215/Build/Supply_Management_System/index.php",
+  "username" : "admin",
+  "password" : "admin123",
+  "timeout" : 20
+}
