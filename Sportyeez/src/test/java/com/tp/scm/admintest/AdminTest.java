@@ -74,7 +74,6 @@ public class AdminTest extends BaseClass {
 		AdminHomePage ahp = new AdminHomePage(driver);
 		ahp.getManageUnitLink().click();
 		AdminManageUnitPage amup = new AdminManageUnitPage(driver);
-		//amup.getAddUnitBtn().click();
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click()", amup.getAddUnitBtn());
 		AdminAddUnitPage aaup = new AdminAddUnitPage(driver);

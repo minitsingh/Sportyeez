@@ -8,13 +8,12 @@
     <classes>
       <class name="com.tp.scm.admintest.AdminTest">
         <methods>
+          <include name="adminAddProductTest"/>
           <include name="configAM"/>
           <include name="configBS"/>
           <include name="configBC"/>
           <include name="configBM"/>
-          <include name="adminManageUnitTest"/>
           <include name="configAS"/>
-          <include name="configAC"/>
         </methods>
       </class> <!-- com.tp.scm.admintest.AdminTest -->
     </classes>

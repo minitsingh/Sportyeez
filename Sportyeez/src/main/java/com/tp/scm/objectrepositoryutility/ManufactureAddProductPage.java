@@ -94,8 +94,9 @@ public class ManufactureAddProductPage {
 	 * @param prodCategory
 	 * @param stockManagement
 	 * @param description
+	 * @throws InterruptedException 
 	 */
-	public void addAProduct(String prodName,String prodPrice,String unitType,String prodCategory,String stockManagement,String description)
+	public void addAProduct(String prodName,String prodPrice,String unitType,String prodCategory,String stockManagement,String description) throws InterruptedException
 	{
 		prodNameText.sendKeys(prodName);
 		prodPriceText.sendKeys(prodPrice);
@@ -113,6 +114,7 @@ public class ManufactureAddProductPage {
 		descriptiontextbox.sendKeys(description);
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click()", addProdBtn);
+		Thread.sleep(2000);
 		driver.switchTo().alert().accept();
 		
 		

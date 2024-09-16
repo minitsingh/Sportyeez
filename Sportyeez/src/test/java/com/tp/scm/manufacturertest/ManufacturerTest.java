@@ -24,7 +24,7 @@ public class ManufacturerTest extends BaseClass {
 	}
 
 	@Test(groups = "smokeTest")
-	public void manufacturerAddProductTest() throws IOException {
+	public void manufacturerAddProductTest() throws IOException, InterruptedException {
 		LoginPage lp = new LoginPage(driver);
 		lp.loginAsManufacturer();
 		ManufacturerHomePage mhp = new ManufacturerHomePage(driver);

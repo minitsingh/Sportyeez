@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
@@ -34,7 +35,7 @@ public class BaseClass {
 	@BeforeClass
 	public void configBC() throws IOException
 	{
-System.out.println("----Launch the browser----");
+		System.out.println("----Launch the browser----");
 		
 		String BROWSER = fLib.getDataFromPropertiesFile("browser");
 
@@ -65,11 +66,11 @@ System.out.println("----Launch the browser----");
 		System.out.println("---logout----");
 	}
 	
-	@AfterMethod
-	public void configAC()
+	@AfterClass
+	public void configAC() throws InterruptedException
 	{
 		System.out.println("----browser closed------");
-		//driver.quit();
+		driver.quit();
 	}
 	
 	@AfterSuite
