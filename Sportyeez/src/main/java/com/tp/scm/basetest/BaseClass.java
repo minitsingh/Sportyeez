@@ -69,7 +69,7 @@ System.out.println("----Launch the browser----");
 	public void configAC()
 	{
 		System.out.println("----browser closed------");
-		driver.quit();
+		//driver.quit();
 	}
 	
 	@AfterSuite

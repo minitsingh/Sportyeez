@@ -47,7 +47,6 @@ public class AdminManageCategoryPage {
 		WebElement ele = driver.findElement(By.xpath("//input[contains(@value,'Category')]"));
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click()", ele);
-		driver.switchTo().alert().accept();
 	}
 	
 	

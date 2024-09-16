@@ -89,10 +89,9 @@ public class AdminAddRetailersPage {
 	 * @param phonoNo
 	 * @param email
 	 * @param address
-	 * @throws InterruptedException
 	 */
 	
-	public void addARetailer(String username,String password,String areaCode,String phonoNo,String email,String address) throws InterruptedException {
+	public void addARetailer(String username,String password,String areaCode,String phonoNo,String email,String address) {
 		retailerUNEdit.sendKeys(username);
 		retailerPWEdit.sendKeys(password);
 		wLib.select(AreaCodeDD, areaCode);

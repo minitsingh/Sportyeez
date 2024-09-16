@@ -1,6 +1,8 @@
 package com.tp.scm.admintest;
 
 import java.io.IOException;
+
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
 
 import com.tp.scm.basetest.BaseClass;
@@ -18,7 +20,7 @@ import com.tp.scm.objectrepositoryutility.LoginPage;
 /**
  * @author MINIT SINGH
  */
-public class adminTest extends BaseClass {
+public class AdminTest extends BaseClass {
 
 	@Test(groups = "smokeTest")
 	public void loginAsAdminTest() throws IOException {
@@ -47,7 +49,7 @@ public class adminTest extends BaseClass {
 	}
 	
 	@Test(groups = "smokeTest")
-	public void adminAddRetailerTest() throws IOException, InterruptedException
+	public void adminAddRetailerTest() throws IOException
 	{
 		LoginPage lp = new LoginPage(driver);
 		lp.loginAsAdmin();
@@ -66,13 +68,15 @@ public class adminTest extends BaseClass {
 	}
 
 	@Test(groups = "smokeTest")
-	public void adminManageUnitTest() throws IOException {
+	public void adminManageUnitTest() throws IOException, InterruptedException{
 		LoginPage lp = new LoginPage(driver);
 		lp.loginAsAdmin();
 		AdminHomePage ahp = new AdminHomePage(driver);
 		ahp.getManageUnitLink().click();
 		AdminManageUnitPage amup = new AdminManageUnitPage(driver);
-		amup.getAddUnitBtn().click();
+		//amup.getAddUnitBtn().click();
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click()", amup.getAddUnitBtn());
 		AdminAddUnitPage aaup = new AdminAddUnitPage(driver);
 		String unitName = eLib.getDataFromExcel("Admin", 10, 2).toString();
 		String details = eLib.getDataFromExcel("Admin", 10, 3).toString();
@@ -84,7 +88,7 @@ public class adminTest extends BaseClass {
 	}
 
 	@Test(groups = "smokeTest")
-	public void adminManageCategoryTest() throws IOException {
+	public void adminManageCategoryTest() throws IOException, InterruptedException{
 		LoginPage lp = new LoginPage(driver);
 		lp.loginAsAdmin();
 		AdminHomePage ahp = new AdminHomePage(driver);

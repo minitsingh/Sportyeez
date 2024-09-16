@@ -25,7 +25,7 @@ public class AdminAddCategoryPage {
 	/**
 	 * Locator strategies object identification
 	 */
-	@FindBy(xpath = "//input[@name='txtCategoryName']")
+	@FindBy(name = "txtCategoryName")
 	private WebElement categoryNameEdit;
 	
 	@FindBy(name = "txtCategoryDetails")
@@ -54,12 +54,14 @@ public class AdminAddCategoryPage {
 	 * Object Utilization, business action
 	 * @param categoryName
 	 * @param detail
+	 * @throws InterruptedException 
 	 */
-	public void addNewCategory(String categoryName,String detail)
+	public void addNewCategory(String categoryName,String detail) throws InterruptedException
 	{
 		categoryNameEdit.sendKeys(categoryName);
 		categoryDetails.sendKeys(detail);
 		addCategoryBtn.click();
+		Thread.sleep(2000);
 		driver.switchTo().alert().accept();
 		
 	}

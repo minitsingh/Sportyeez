@@ -30,7 +30,7 @@ public class RetailerHomePage {
 	@FindBy(linkText = "Edit Profile")
 	private WebElement editProfileLink;
 	
-	@FindBy(linkText = "Home")
+	@FindBy(partialLinkText = "Hom")
 	private WebElement homePageLink;
 
 	@FindBy(linkText = "Products")

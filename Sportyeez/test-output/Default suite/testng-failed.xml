@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tp.scm.manufacturertest.manufacturerTest">
+      <class name="com.tp.scm.admintest.AdminTest">
         <methods>
           <include name="configAM"/>
           <include name="configBS"/>
           <include name="configBC"/>
           <include name="configBM"/>
-          <include name="manufacturerManageQuantity"/>
+          <include name="adminManageCategoryTest"/>
           <include name="configAS"/>
           <include name="configAC"/>
         </methods>
-      </class> <!-- com.tp.scm.manufacturertest.manufacturerTest -->
+      </class> <!-- com.tp.scm.admintest.AdminTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -13,7 +13,7 @@ import com.tp.scm.objectrepositoryutility.ManufacturerManageStockPage;
 /**
  * @author MINIT SINGH
  */
-public class manufacturerTest extends BaseClass {
+public class ManufacturerTest extends BaseClass {
 
 	@Test
 	public void manufacturerLoginTest() throws IOException {

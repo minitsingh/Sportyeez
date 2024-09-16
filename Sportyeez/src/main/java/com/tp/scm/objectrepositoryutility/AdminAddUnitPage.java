@@ -51,12 +51,14 @@ public class AdminAddUnitPage {
 	 *  Object Utilization , business libraries
 	 * @param unitName
 	 * @param details
+	 * @throws InterruptedException 
 	 */
-	public void addNewUnit(String unitName,String details)
+	public void addNewUnit(String unitName,String details) throws InterruptedException
 	{
 		unitNameEdit.sendKeys(unitName);
 		unitDetailsEdit.sendKeys(details);
 		addCategoryBtn.click();
+		Thread.sleep(2000);
 		driver.switchTo().alert().accept();
 	}
 	

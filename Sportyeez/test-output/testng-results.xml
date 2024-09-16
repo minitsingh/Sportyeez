@@ -1,44 +1,225 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="4" total="15" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-16T11:13:30Z" name="Default suite" finished-at="2024-09-16T11:13:35Z" duration-ms="5294">
+  <suite started-at="2024-09-16T18:44:52Z" name="Suite" finished-at="2024-09-16T18:45:28Z" duration-ms="36180">
     <groups>
       <group name="smokeTest">
-        <method signature="manufacturerTest.manufacturerManageQuantity()[pri:0, instance:com.tp.scm.manufacturertest.manufacturerTest@3daf7722]" name="manufacturerManageQuantity" class="com.tp.scm.manufacturertest.manufacturerTest"/>
+        <method signature="AdminTest.adminAddDistributor()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" name="adminAddDistributor" class="com.tp.scm.admintest.AdminTest"/>
+        <method signature="AdminTest.adminAddManufacturer()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" name="adminAddManufacturer" class="com.tp.scm.admintest.AdminTest"/>
+        <method signature="AdminTest.adminAddProductTest()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" name="adminAddProductTest" class="com.tp.scm.admintest.AdminTest"/>
+        <method signature="AdminTest.adminAddRetailerTest()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" name="adminAddRetailerTest" class="com.tp.scm.admintest.AdminTest"/>
+        <method signature="AdminTest.adminManageCategoryTest()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" name="adminManageCategoryTest" class="com.tp.scm.admintest.AdminTest"/>
+        <method signature="AdminTest.adminManageUnitTest()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" name="adminManageUnitTest" class="com.tp.scm.admintest.AdminTest"/>
+        <method signature="AdminTest.loginAsAdminTest()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" name="loginAsAdminTest" class="com.tp.scm.admintest.AdminTest"/>
+        <method signature="ManufacturerTest.manufacturerAddProductTest()[pri:0, instance:com.tp.scm.manufacturertest.ManufacturerTest@6cce16f4]" name="manufacturerAddProductTest" class="com.tp.scm.manufacturertest.ManufacturerTest"/>
+        <method signature="ManufacturerTest.manufacturerManageQuantity()[pri:0, instance:com.tp.scm.manufacturertest.ManufacturerTest@6cce16f4]" name="manufacturerManageQuantity" class="com.tp.scm.manufacturertest.ManufacturerTest"/>
+        <method signature="RetailerTest.retailerLoginTest()[pri:0, instance:com.tp.scm.retailertest.RetailerTest@7efaad5a]" name="retailerLoginTest" class="com.tp.scm.retailertest.RetailerTest"/>
       </group> <!-- smokeTest -->
     </groups>
-    <test started-at="2024-09-16T11:13:30Z" name="Default test" finished-at="2024-09-16T11:13:35Z" duration-ms="5294">
-      <class name="com.tp.scm.manufacturertest.manufacturerTest">
-        <test-method is-config="true" signature="configBS()[pri:0, instance:com.tp.scm.manufacturertest.manufacturerTest@3daf7722]" started-at="2024-09-16T11:13:30Z" name="configBS" finished-at="2024-09-16T11:13:30Z" duration-ms="269" status="PASS">
+    <test started-at="2024-09-16T18:44:52Z" name="Test" finished-at="2024-09-16T18:45:28Z" duration-ms="36180">
+      <class name="com.tp.scm.admintest.AdminTest">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:44:52Z" name="configBS" finished-at="2024-09-16T18:44:52Z" duration-ms="258" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBS -->
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.tp.scm.manufacturertest.manufacturerTest@3daf7722]" started-at="2024-09-16T11:13:30Z" name="configBC" finished-at="2024-09-16T11:13:32Z" duration-ms="2378" status="PASS">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:44:52Z" name="configBC" finished-at="2024-09-16T18:44:55Z" duration-ms="2964" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tp.scm.manufacturertest.manufacturerTest@3daf7722]" started-at="2024-09-16T11:13:32Z" name="configBM" finished-at="2024-09-16T11:13:33Z" duration-ms="490" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:44:55Z" name="configBM" finished-at="2024-09-16T18:44:56Z" duration-ms="543" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="manufacturerManageQuantity()[pri:0, instance:com.tp.scm.manufacturertest.manufacturerTest@3daf7722]" started-at="2024-09-16T11:13:33Z" name="manufacturerManageQuantity" finished-at="2024-09-16T11:13:35Z" duration-ms="2200" status="PASS">
+        <test-method signature="adminAddDistributor()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:44:56Z" name="adminAddDistributor" finished-at="2024-09-16T18:44:58Z" duration-ms="2861" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- manufacturerManageQuantity -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.tp.scm.manufacturertest.manufacturerTest@3daf7722]" started-at="2024-09-16T11:13:35Z" name="configAC" finished-at="2024-09-16T11:13:35Z" duration-ms="207" status="PASS">
+        </test-method> <!-- adminAddDistributor -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:44:58Z" name="configAC" finished-at="2024-09-16T18:44:58Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.tp.scm.manufacturertest.manufacturerTest@3daf7722]" started-at="2024-09-16T11:13:35Z" name="configAM" finished-at="2024-09-16T11:13:35Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:44:58Z" name="configAM" finished-at="2024-09-16T18:44:58Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAS()[pri:0, instance:com.tp.scm.manufacturertest.manufacturerTest@3daf7722]" started-at="2024-09-16T11:13:35Z" name="configAS" finished-at="2024-09-16T11:13:35Z" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:44:58Z" name="configBM" finished-at="2024-09-16T18:44:59Z" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="adminAddManufacturer()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:44:59Z" name="adminAddManufacturer" finished-at="2024-09-16T18:45:00Z" duration-ms="1902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminAddManufacturer -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:45:00Z" name="configAM" finished-at="2024-09-16T18:45:00Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:45:00Z" name="configAC" finished-at="2024-09-16T18:45:00Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:45:00Z" name="configBM" finished-at="2024-09-16T18:45:01Z" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="adminAddProductTest()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:45:01Z" name="adminAddProductTest" finished-at="2024-09-16T18:45:03Z" duration-ms="2591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminAddProductTest -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:45:03Z" name="configAC" finished-at="2024-09-16T18:45:03Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:45:03Z" name="configAM" finished-at="2024-09-16T18:45:03Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:45:03Z" name="configBM" finished-at="2024-09-16T18:45:03Z" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="adminAddRetailerTest()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:45:03Z" name="adminAddRetailerTest" finished-at="2024-09-16T18:45:06Z" duration-ms="2787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminAddRetailerTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:45:06Z" name="configAM" finished-at="2024-09-16T18:45:06Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:45:06Z" name="configAC" finished-at="2024-09-16T18:45:06Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:45:06Z" name="configBM" finished-at="2024-09-16T18:45:06Z" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="adminManageCategoryTest()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:45:06Z" name="adminManageCategoryTest" finished-at="2024-09-16T18:45:10Z" duration-ms="4326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminManageCategoryTest -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:45:11Z" name="configAC" finished-at="2024-09-16T18:45:11Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:45:11Z" name="configAM" finished-at="2024-09-16T18:45:11Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:45:11Z" name="configBM" finished-at="2024-09-16T18:45:11Z" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="adminManageUnitTest()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:45:11Z" name="adminManageUnitTest" finished-at="2024-09-16T18:45:15Z" duration-ms="3954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminManageUnitTest -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:45:15Z" name="configAC" finished-at="2024-09-16T18:45:15Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:45:15Z" name="configAM" finished-at="2024-09-16T18:45:15Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:45:15Z" name="configBM" finished-at="2024-09-16T18:45:15Z" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="loginAsAdminTest()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:45:15Z" name="loginAsAdminTest" finished-at="2024-09-16T18:45:16Z" duration-ms="1132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAsAdminTest -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:45:16Z" name="configAC" finished-at="2024-09-16T18:45:16Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:45:16Z" name="configAM" finished-at="2024-09-16T18:45:16Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAS()[pri:0, instance:com.tp.scm.admintest.AdminTest@6af9fcb2]" started-at="2024-09-16T18:45:28Z" name="configAS" finished-at="2024-09-16T18:45:28Z" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAS -->
-      </class> <!-- com.tp.scm.manufacturertest.manufacturerTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.tp.scm.admintest.AdminTest -->
+      <class name="com.tp.scm.manufacturertest.ManufacturerTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.tp.scm.manufacturertest.ManufacturerTest@6cce16f4]" started-at="2024-09-16T18:45:16Z" name="configBC" finished-at="2024-09-16T18:45:18Z" duration-ms="2546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tp.scm.manufacturertest.ManufacturerTest@6cce16f4]" started-at="2024-09-16T18:45:18Z" name="configBM" finished-at="2024-09-16T18:45:19Z" duration-ms="531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="manufacturerAddProductTest()[pri:0, instance:com.tp.scm.manufacturertest.ManufacturerTest@6cce16f4]" started-at="2024-09-16T18:45:19Z" name="manufacturerAddProductTest" finished-at="2024-09-16T18:45:21Z" duration-ms="2441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manufacturerAddProductTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.tp.scm.manufacturertest.ManufacturerTest@6cce16f4]" started-at="2024-09-16T18:45:21Z" name="configAM" finished-at="2024-09-16T18:45:21Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.tp.scm.manufacturertest.ManufacturerTest@6cce16f4]" started-at="2024-09-16T18:45:21Z" name="configAC" finished-at="2024-09-16T18:45:21Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tp.scm.manufacturertest.ManufacturerTest@6cce16f4]" started-at="2024-09-16T18:45:21Z" name="configBM" finished-at="2024-09-16T18:45:21Z" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="manufacturerLoginTest()[pri:0, instance:com.tp.scm.manufacturertest.ManufacturerTest@6cce16f4]" started-at="2024-09-16T18:45:21Z" name="manufacturerLoginTest" finished-at="2024-09-16T18:45:22Z" duration-ms="641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manufacturerLoginTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.tp.scm.manufacturertest.ManufacturerTest@6cce16f4]" started-at="2024-09-16T18:45:22Z" name="configAM" finished-at="2024-09-16T18:45:22Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.tp.scm.manufacturertest.ManufacturerTest@6cce16f4]" started-at="2024-09-16T18:45:22Z" name="configAC" finished-at="2024-09-16T18:45:22Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tp.scm.manufacturertest.ManufacturerTest@6cce16f4]" started-at="2024-09-16T18:45:22Z" name="configBM" finished-at="2024-09-16T18:45:22Z" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="manufacturerManageQuantity()[pri:0, instance:com.tp.scm.manufacturertest.ManufacturerTest@6cce16f4]" started-at="2024-09-16T18:45:22Z" name="manufacturerManageQuantity" finished-at="2024-09-16T18:45:24Z" duration-ms="1611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manufacturerManageQuantity -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.tp.scm.manufacturertest.ManufacturerTest@6cce16f4]" started-at="2024-09-16T18:45:24Z" name="configAM" finished-at="2024-09-16T18:45:24Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.tp.scm.manufacturertest.ManufacturerTest@6cce16f4]" started-at="2024-09-16T18:45:24Z" name="configAC" finished-at="2024-09-16T18:45:24Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.tp.scm.manufacturertest.ManufacturerTest -->
+      <class name="com.tp.scm.retailertest.RetailerTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.tp.scm.retailertest.RetailerTest@7efaad5a]" started-at="2024-09-16T18:45:24Z" name="configBC" finished-at="2024-09-16T18:45:27Z" duration-ms="2772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tp.scm.retailertest.RetailerTest@7efaad5a]" started-at="2024-09-16T18:45:27Z" name="configBM" finished-at="2024-09-16T18:45:27Z" duration-ms="677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="retailerLoginTest()[pri:0, instance:com.tp.scm.retailertest.RetailerTest@7efaad5a]" started-at="2024-09-16T18:45:27Z" name="retailerLoginTest" finished-at="2024-09-16T18:45:28Z" duration-ms="945" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- retailerLoginTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.tp.scm.retailertest.RetailerTest@7efaad5a]" started-at="2024-09-16T18:45:28Z" name="configAM" finished-at="2024-09-16T18:45:28Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.tp.scm.retailertest.RetailerTest@7efaad5a]" started-at="2024-09-16T18:45:28Z" name="configAC" finished-at="2024-09-16T18:45:28Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.tp.scm.retailertest.RetailerTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
