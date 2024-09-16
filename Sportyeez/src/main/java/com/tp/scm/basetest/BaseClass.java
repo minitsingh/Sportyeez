@@ -37,7 +37,9 @@ public class BaseClass {
 	{
 		System.out.println("----Launch the browser----");
 		
-		String BROWSER = fLib.getDataFromPropertiesFile("browser");
+		//String BROWSER = fLib.getDataFromPropertiesFile("browser");
+		
+		String BROWSER = System.getProperty("browser");
 
 		if (BROWSER.equals("chrome"))
 			driver = new ChromeDriver();
@@ -55,7 +57,8 @@ public class BaseClass {
 	public void configBM() throws IOException
 	{
 		System.out.println("----Login----");
-		String URL = fLib.getDataFromPropertiesFile("url");
+		//String URL = fLib.getDataFromPropertiesFile("url");
+		String URL = System.getProperty("url");
 		driver.get(URL);
 		
 	}
