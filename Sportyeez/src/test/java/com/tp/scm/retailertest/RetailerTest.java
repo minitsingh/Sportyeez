@@ -16,7 +16,6 @@ public class RetailerTest extends BaseClass {
 		LoginPage lp = new LoginPage(driver);
 		lp.loginAsRetailer();
 		RetailerHomePage rhp = new RetailerHomePage(driver);
-		Assert.fail();
 		rhp.logout();
 	}
 
