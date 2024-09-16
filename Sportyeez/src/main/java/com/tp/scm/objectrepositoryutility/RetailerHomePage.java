@@ -29,6 +29,19 @@ public class RetailerHomePage {
 	
 	@FindBy(linkText = "Edit Profile")
 	private WebElement editProfileLink;
+	
+	@FindBy(linkText = "Home")
+	private WebElement homePageLink;
+
+	@FindBy(linkText = "Products")
+	private WebElement ProductsLink;
+	
+	@FindBy(linkText = "My Orders")
+	private WebElement myOrdersLink;
+	
+	@FindBy(linkText = "My Invoices")
+	private WebElement myInvoiceLink;
+
 	/**
 	 * object Encapsulation . getters method
 	 * @return
@@ -37,6 +50,38 @@ public class RetailerHomePage {
 	public WebElement getLogoutBtn() {
 		return logoutBtn;
 	}
+	
+	
+	public WebElement getNewOrderLink() {
+		return newOrderLink;
+	}
+
+
+	public WebElement getEditProfileLink() {
+		return editProfileLink;
+	}
+
+
+	public WebElement getHomePageLink() {
+		return homePageLink;
+	}
+
+
+	public WebElement getProductsLink() {
+		return ProductsLink;
+	}
+
+
+	public WebElement getMyOrdersLink() {
+		return myOrdersLink;
+	}
+
+
+	public WebElement getMyInvoiceLink() {
+		return myInvoiceLink;
+	}
+
+
 	/**
 	 * Object Utilization , business Libraries
 	 */

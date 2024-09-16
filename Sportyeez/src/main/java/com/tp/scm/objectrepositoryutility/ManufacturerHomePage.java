@@ -38,22 +38,22 @@ public class ManufacturerHomePage {
 	private WebElement manageCategoryLink;
 	
 	@FindBy(linkText = "Home")
-	private WebElement homePage;
+	private WebElement homePageLink;
 	
 	@FindBy(linkText = "Retailers")
-	private WebElement retailerDetails;
+	private WebElement retailerDetailsLink;
 	
 	@FindBy(linkText = "Distributors")
-	private WebElement distributorsDetails;
+	private WebElement distributorsDetailsLink;
 	
 	@FindBy(linkText = "Products")
-	private WebElement productsDetails;
+	private WebElement productsDetailLink;
 	
 	@FindBy(linkText = "Orders")
-	private WebElement orderPage;
+	private WebElement ordersDetailLink;
 	
 	@FindBy(linkText = "Invoice")
-	private WebElement invoiceDetails;
+	private WebElement invoiceDetailsLink;
 	
 	/**
 	 * Object Encapsulation , Getters method
@@ -61,8 +61,6 @@ public class ManufacturerHomePage {
 	public WebElement getLogoutBtn() {
 		return logoutBtn;
 	}
-	
-
 	public WebElement getAddProductsLink() {
 		return addProductsLink;
 	}
@@ -76,22 +74,22 @@ public class ManufacturerHomePage {
 		return manageCategoryLink;
 	}
 	public WebElement getHomePage() {
-		return homePage;
+		return homePageLink;
 	}
 	public WebElement getRetailerDetails() {
-		return retailerDetails;
+		return retailerDetailsLink;
 	}
 	public WebElement getDistributorsDetails() {
-		return distributorsDetails;
+		return distributorsDetailsLink;
 	}
 	public WebElement getProductsDetails() {
-		return productsDetails;
+		return productsDetailLink;
 	}
 	public WebElement getOrderPage() {
-		return orderPage;
+		return ordersDetailLink;
 	}
 	public WebElement getInvoiceDetails() {
-		return invoiceDetails;
+		return invoiceDetailsLink;
 	}
 	/**
 	 * Object utilization , business action
