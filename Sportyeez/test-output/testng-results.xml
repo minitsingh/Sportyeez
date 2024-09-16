@@ -1,78 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-16T07:25:29Z" name="Default suite" finished-at="2024-09-16T07:25:39Z" duration-ms="9265">
+  <suite started-at="2024-09-16T11:13:30Z" name="Default suite" finished-at="2024-09-16T11:13:35Z" duration-ms="5294">
     <groups>
+      <group name="smokeTest">
+        <method signature="manufacturerTest.manufacturerManageQuantity()[pri:0, instance:com.tp.scm.manufacturertest.manufacturerTest@3daf7722]" name="manufacturerManageQuantity" class="com.tp.scm.manufacturertest.manufacturerTest"/>
+      </group> <!-- smokeTest -->
     </groups>
-    <test started-at="2024-09-16T07:25:29Z" name="Default test" finished-at="2024-09-16T07:25:39Z" duration-ms="9265">
-      <class name="com.tp.scm.retailertest.RetailerTest">
-        <test-method is-config="true" signature="configBS()[pri:0, instance:com.tp.scm.retailertest.RetailerTest@78641d23]" started-at="2024-09-16T07:25:29Z" name="configBS" finished-at="2024-09-16T07:25:29Z" duration-ms="323" status="PASS">
+    <test started-at="2024-09-16T11:13:30Z" name="Default test" finished-at="2024-09-16T11:13:35Z" duration-ms="5294">
+      <class name="com.tp.scm.manufacturertest.manufacturerTest">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:com.tp.scm.manufacturertest.manufacturerTest@3daf7722]" started-at="2024-09-16T11:13:30Z" name="configBS" finished-at="2024-09-16T11:13:30Z" duration-ms="269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBS -->
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.tp.scm.retailertest.RetailerTest@78641d23]" started-at="2024-09-16T07:25:29Z" name="configBC" finished-at="2024-09-16T07:25:37Z" duration-ms="7447" status="PASS">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.tp.scm.manufacturertest.manufacturerTest@3daf7722]" started-at="2024-09-16T11:13:30Z" name="configBC" finished-at="2024-09-16T11:13:32Z" duration-ms="2378" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tp.scm.retailertest.RetailerTest@78641d23]" started-at="2024-09-16T07:25:37Z" name="configBM" finished-at="2024-09-16T07:25:37Z" duration-ms="479" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tp.scm.manufacturertest.manufacturerTest@3daf7722]" started-at="2024-09-16T11:13:32Z" name="configBM" finished-at="2024-09-16T11:13:33Z" duration-ms="490" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="retailerLoginTest()[pri:0, instance:com.tp.scm.retailertest.RetailerTest@78641d23]" started-at="2024-09-16T07:25:37Z" name="retailerLoginTest" finished-at="2024-09-16T07:25:38Z" duration-ms="851" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.fail(Assert.java:103)
-at com.tp.scm.retailertest.RetailerTest.retailerLoginTest(RetailerTest.java:19)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="manufacturerManageQuantity()[pri:0, instance:com.tp.scm.manufacturertest.manufacturerTest@3daf7722]" started-at="2024-09-16T11:13:33Z" name="manufacturerManageQuantity" finished-at="2024-09-16T11:13:35Z" duration-ms="2200" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- retailerLoginTest -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.tp.scm.retailertest.RetailerTest@78641d23]" started-at="2024-09-16T07:25:38Z" name="configAC" finished-at="2024-09-16T07:25:39Z" duration-ms="262" status="PASS">
+        </test-method> <!-- manufacturerManageQuantity -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.tp.scm.manufacturertest.manufacturerTest@3daf7722]" started-at="2024-09-16T11:13:35Z" name="configAC" finished-at="2024-09-16T11:13:35Z" duration-ms="207" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.tp.scm.retailertest.RetailerTest@78641d23]" started-at="2024-09-16T07:25:39Z" name="configAM" finished-at="2024-09-16T07:25:39Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.tp.scm.manufacturertest.manufacturerTest@3daf7722]" started-at="2024-09-16T11:13:35Z" name="configAM" finished-at="2024-09-16T11:13:35Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAS()[pri:0, instance:com.tp.scm.retailertest.RetailerTest@78641d23]" started-at="2024-09-16T07:25:39Z" name="configAS" finished-at="2024-09-16T07:25:39Z" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="configAS()[pri:0, instance:com.tp.scm.manufacturertest.manufacturerTest@3daf7722]" started-at="2024-09-16T11:13:35Z" name="configAS" finished-at="2024-09-16T11:13:35Z" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAS -->
-      </class> <!-- com.tp.scm.retailertest.RetailerTest -->
+      </class> <!-- com.tp.scm.manufacturertest.manufacturerTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

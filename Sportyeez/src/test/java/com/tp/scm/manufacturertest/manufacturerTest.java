@@ -9,6 +9,7 @@ import com.tp.scm.objectrepositoryutility.AdminHomePage;
 import com.tp.scm.objectrepositoryutility.LoginPage;
 import com.tp.scm.objectrepositoryutility.ManufactureAddProductPage;
 import com.tp.scm.objectrepositoryutility.ManufacturerHomePage;
+import com.tp.scm.objectrepositoryutility.ManufacturerManageStockPage;
 
 public class manufacturerTest extends BaseClass {
 
@@ -36,6 +37,24 @@ public class manufacturerTest extends BaseClass {
 		mapp.addAProduct(productName, price, unitType, category, stockManagement, description);
 		mhp.getHomePage().click();
 		mhp.logout();
+	}
+	
+	@Test(groups = "smokeTest")
+	public void manufacturerManageQuantity() throws IOException {
+		LoginPage lp = new LoginPage(driver);
+		lp.loginAsManufacturer();
+		ManufacturerHomePage mhp = new ManufacturerHomePage(driver);
+		mhp.getManageStockLink().click();
+		ManufacturerManageStockPage mmsp = new ManufacturerManageStockPage(driver);
+		String productName = eLib.getDataFromExcel("Manufacturer", 7, 2);
+		String quantity = eLib.getDataFromExcel("Manufacturer", 7, 3);
+		mmsp.updateStock(productName, quantity);
+		mhp.getHomePage().click();
+		mhp.logout();
+		
+		
+		
+		
 	}
 	
 }
