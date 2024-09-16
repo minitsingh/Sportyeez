@@ -10,7 +10,9 @@ import com.tp.scm.objectrepositoryutility.LoginPage;
 import com.tp.scm.objectrepositoryutility.ManufactureAddProductPage;
 import com.tp.scm.objectrepositoryutility.ManufacturerHomePage;
 import com.tp.scm.objectrepositoryutility.ManufacturerManageStockPage;
-
+/**
+ * @author MINIT SINGH
+ */
 public class manufacturerTest extends BaseClass {
 
 	@Test

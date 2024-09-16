@@ -7,11 +7,12 @@ import com.tp.scm.basetest.BaseClass;
 import com.tp.scm.objectrepositoryutility.LoginPage;
 import com.tp.scm.objectrepositoryutility.RetailerHomePage;
 
-@Listeners(com.tp.scm.listenersutility.ListernerImpClass.class)
-
+/**
+ * @author MINIT SINGH
+ */
 public class RetailerTest extends BaseClass {
 
-	@Test
+	@Test(groups = "smokeTest")
 	public void retailerLoginTest() throws IOException {
 		LoginPage lp = new LoginPage(driver);
 		lp.loginAsRetailer();
